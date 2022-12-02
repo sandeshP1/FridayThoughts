@@ -1,0 +1,3 @@
+Tcs
+permanent
+update ebname set locatio="giti" where id ="464;

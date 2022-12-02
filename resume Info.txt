@@ -1,0 +1,76 @@
+name : Sandesh P
+dateOfBirth:28/12/1996
+
+
+profesionals Summary
+1.Xpath,Xpath-Axes,CSS
+2.Page Object Model.
+
+
+2600 tesScripts
+FileInputStream fin=null
+int n=0;
+{
+fin= new fio();
+while(true)
+{
+n=fin.read();
+if(n==-1)
+{
+break;
+}
+}
+char ch =(char)n;
+syso(ch);
+
+
+
+getWriteproperty()
+fileouputStream fout=null;
+properties prop =null
+{
+
+  fout = new FileoutputStream("\\path.properties");
+  prop.setProperty("username","Sandesh");
+  prop.setProerty("password","username123);
+  prop.setProerty("admin","manager1");
+  prop.store(fout,"it is for demo purpose");
+}
+catch{
+e.printStackTrace();
+}
+
+
+getreadProperty()
+{
+fileinputStream fin=null;
+properties prop =null;
+try
+{
+prop.load(fin);
+String value=prop.getProperty("username");
+syso(value);
+String value1=prop.getProperty(password");
+syso(value1);
+}}
+
+
+readTheExcelFile()
+{
+fileinputstream fin=null;
+WorkBook wb =null;
+Sheet shhet=null;
+Row row=null;
+Cell cell =null;
+
+try
+{
+ fin=new FileInputStream();
+ wb=new XSSFWorkBook(fin);
+Sheet =wb.getSheet("Sheetname");
+row=sheet.getRow(1);
+cell =row.getCell(0);
+String Cell1=cell.getStringCellValue();
+
+
+

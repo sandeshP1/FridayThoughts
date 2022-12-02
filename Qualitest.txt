@@ -1,0 +1,109 @@
+//Sort the ArrayList elements without using builtinmethods and sum allthe elements
+
+public class arrayList{
+public statc void main(String [] args)
+{
+ArrayList<Integer> array= new ArrayList<Integer>();
+array.add(100);
+array.add(20);
+array.add(3000);
+array.add(40);
+array.add(5);
+int len =array.size();
+int temp;
+for(int i=0;i<len;i++)
+{
+for(int j=i;j<len;j++)
+{
+if(array.get(i)>array.get(j))
+{
+temp=array.get(j);
+array.set(j,array.get(i));
+array.set(i,temp);
+}
+}
+System.out.printlnn("Sorted array Elements"+array);
+
+///Second part add all the Elements and show the Answer
+int sum=0;
+for(int i=0;i<len;i++)
+{
+sum= sum+array.get(i);
+}
+System.out.println("sum of ArrayList elemnts ="+sum);
+}
+}
+}
+
+
+2>>>>>>>>>>>>with out using built in String functions Reverse the Given given String
+3)Given String is Palindrome or not
+4)Write a program to count duplicate Words with using hashmaps and without hashmaps
+5)write a program count of duplicate Characters
+6)Diffrence Btw WebDriverwait and Fluent Wait
+7)write A programme to Capture ScreenShot
+8)if there are any dynamic elements Xpath Axes
+9)how can to reproduce the Stale Element reference Excption
+
+List<webElement> olinks =oBrowser.findElements(By.xpath("//a[@href]");
+for(int i=0;i<olins.size();i++)
+{
+webElement link = olinks.get(i);
+String str=lin.getText();
+
+if(str.endsWith("HQ"))
+{
+link.click();
+}
+}
+}
+
+}
+
+10)how to resolve the Stale Element refernce Excpetion
+
+Feature:Login Functionality
+Scenario outline:verify Login Functionality
+Given I launch the Chrome browser
+And I Navigate to the Application URL
+When I enter "<username>" in username text field
+And I enter "<password>" in the password text field
+And I click on the login button
+Then I find the HomePage
+When I click on the Logout Link
+Then I find the login page 
+And I close the Application
+
+Examples:
+|username|password|
+|admin|manager|
+|admin|manager|
+|admin|manger|
+
+
+
+
+
+How to do the Schema Validation in json
+i have to add a dependency
+
+io.rest-assured
+json-schema-validator
+5.1.1
+
+in pom.xml file.
+the Schema file which had been provide by the developer,
+will be stored in a schema files folder of the our eclipse maven project
+
+JsonSchemaValidator.matchesJsonSchema(new File("\\chemaFile.json"))
+by using the method i would like to provide the jsonSchema file Object as a parameter 
+
+
+
+
+
+TakesScreenshot takescreenshot =(TakesScreenshot)oBrowser;
+=takescreenshot.getScreenShot(OUTPUT.TYPE);
+
+
+
